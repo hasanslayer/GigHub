@@ -1,5 +1,10 @@
 ﻿/* Bootstrap Overrides */
 
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
+
 .navbar-inverse {
     background-color: #FF4253;
     border-color: #FF4253;
@@ -16,13 +21,13 @@
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     color: #fff;
     background-color: #1f2d5c;
-    background-color: rgba(31, 45, 92, 0.73);
+    background-color: rgba(31, 45, 92, 0.25);
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     color: #fff;
     background-color: #1f2d5c;
-    background-color: rgba(31, 45, 92, 0.73);
+    background-color: rgba(31, 45, 92, 0.25);
 }
 
 .dropdown-menu {
@@ -77,3 +82,4 @@ h6,
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+
