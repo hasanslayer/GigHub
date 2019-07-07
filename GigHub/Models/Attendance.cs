@@ -15,6 +15,7 @@ namespace GigHub.Models
         [Key]
         [Column(Order = 1)]
         public int GigId { get; set; }
+
         [Key]
         [Column(Order = 2)]
         public string AttendeeId { get; set; }
