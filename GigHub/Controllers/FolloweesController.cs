@@ -25,7 +25,7 @@ namespace GigHub.Controllers
             var userId = User.Identity.GetUserId();
 
             var artists = _context.Followings
-                .Where(f => f.FolloweeId == userId)
+                .Where(f => f.FollowerId == userId)
                 .Select(f => f.Followee)
                 .ToList();
 
