@@ -9,6 +9,7 @@ using AutoMapper;
 using GigHub.Dtos;
 using GigHub.Models;
 using Microsoft.AspNet.Identity;
+using WebGrease.Css.Extensions;
 
 namespace GigHub.Controllers.API
 {
@@ -32,7 +33,22 @@ namespace GigHub.Controllers.API
                 .Include(n => n.Gig.Artist)
                 .ToList();
 
-            return notifications.Select(Mapper.Map<Notification,NotificationDto>);
+            return notifications.Select(Mapper.Map<Notification, NotificationDto>);
+        }
+
+        [HttpPost]
+        public IHttpActionResult MarkAsRead()
+        {
+            var userId = User.Identity.GetUserId();
+            var notifications = _context.UserNotifications
+                .Where(un => un.UserId == userId && !un.IsRead)
+                .ToList();
+
+            notifications.ForEach(n => n.Read());
+
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }

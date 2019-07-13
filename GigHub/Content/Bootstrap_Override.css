@@ -1,85 +1,73 @@
 ﻿/* Bootstrap Overrides */
-
-
-
+.popover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 span.field-validation-error {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
-
 .voffset {
-    margin-top: 2px;
+  margin-top: 2px;
 }
-
 .voffset1 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
-
 .voffset2 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-
 .voffset3 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
 .voffset4 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
-
 .voffset5 {
-    margin-top: 80px;
+  margin-top: 80px;
 }
-
 .navbar-inverse {
-    background-color: #FF4253;
-    border-color: #FF4253;
+  background-color: #FF4253;
+  border-color: #FF4253;
 }
-
-    .navbar-inverse .navbar-nav > li > a {
-        color: #fff;
-    }
-
-    .navbar-inverse .navbar-brand {
-        color: #fff;
-    }
-
-    .navbar-inverse .notifications {
-        position: relative;
-    }
-
-        .navbar-inverse .notifications .badge {
-            position: absolute;
-            top: 8px;
-            right: -1px;
-            background: #333333;
-        }
-
-    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-        color: #fff;
-        background-color: #1f2d5c;
-        background-color: rgba(31, 45, 92, 0.25);
-    }
-
-        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-            color: #fff;
-            background-color: #1f2d5c;
-            background-color: rgba(31, 45, 92, 0.25);
-        }
-
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+.navbar-inverse .notifications {
+  position: relative;
+}
+.navbar-inverse .notifications .badge {
+  position: absolute;
+  top: 8px;
+  right: -1px;
+  background: #333333;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #1f2d5c;
+  background-color: rgba(31, 45, 92, 0.25);
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #1f2d5c;
+  background-color: rgba(31, 45, 92, 0.25);
+}
 .dropdown-menu {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-
 .navbar-brand {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 body {
-    font-size: 17px;
+  font-size: 17px;
 }
-
 body,
 h1,
 h2,
@@ -93,108 +81,88 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: Lato;
+  font-family: Lato;
 }
-
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
 .form-control {
-    font-size: 17px;
-    height: 44px;
-    -ms-border-radius: 9px;
-    border-radius: 9px;
+  font-size: 17px;
+  height: 44px;
+  -ms-border-radius: 9px;
+  border-radius: 9px;
 }
-
-    .form-control:focus {
-        border-color: #2196f3;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
+.form-control:focus {
+  border-color: #2196f3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn {
-    /*padding: 7px 20px;
+  /*padding: 7px 20px;
     font-size: 17px;*/
-    -ms-border-radius: 9px;
-    border-radius: 9px;
+  -ms-border-radius: 9px;
+  border-radius: 9px;
 }
-
 /*page-level styles*/
-
 .gigs {
-    list-style: none;
+  list-style: none;
 }
-
-    .gigs > li .date {
-        background: red;
-        color: white;
-        text-align: center;
-        width: 60px;
-        border-radius: 8px;
-    }
-
-        .gigs > li .date .month {
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: bold;
-            padding: 2px 6px;
-        }
-
-        .gigs > li .date .day {
-            background: #f7f7f7;
-            color: #333;
-            font-size: 20px;
-            padding: 6px 12px;
-        }
-
-    .gigs > li {
-        position: relative;
-        margin-bottom: 30px;
-    }
-
-        .gigs > li .detail {
-            position: absolute;
-            top: 0;
-            left: 70px;
-        }
-
-            .gigs > li .detail .artist {
-                font-weight: bold;
-                display: block;
-            }
-
-            .gigs > li .detail .genre {
-                font-size: 15px;
-            }
-
-        .gigs > li .actions {
-            font-size: 15px;
-            display: none;
-        }
-
-        .gigs > li :hover .actions {
-            display: block;
-        }
-
+.gigs > li {
+  position: relative;
+  margin-bottom: 30px;
+}
+.gigs > li .detail {
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+.gigs > li .detail .artist {
+  font-weight: bold;
+  display: block;
+}
+.gigs > li .detail .genre {
+  font-size: 15px;
+}
+.gigs > li .actions {
+  font-size: 15px;
+  display: none;
+}
+.gigs > li .date {
+  background: red;
+  color: white;
+  text-align: center;
+  width: 60px;
+  border-radius: 8px;
+}
+.gigs > li .date .month {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+}
+.gigs > li .date .day {
+  background: #f7f7f7;
+  color: #333;
+  font-size: 20px;
+  padding: 6px 12px;
+}
+.gigs > li:hover .actions {
+  display: block;
+}
 .popover-notifications .popover-content {
-    padding: 0;
+  padding: 0;
 }
-
 .popover-notifications ul.notifications {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
-
-    .popover-notifications ul.notifications > li {
-        border-bottom: 1px solid #ddd;
-        padding: 10px;
-    }
-
-        .popover-notifications ul.notifications > li:last-child {
-            border-bottom: none;
-        }
-
+.popover-notifications ul.notifications > li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+.popover-notifications ul.notifications > li:last-child {
+  border-bottom: none;
+}
 .popover-notifications ul.notifications .highlight {
-    font-weight: bold;
+  font-weight: bold;
 }
