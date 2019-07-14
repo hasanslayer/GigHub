@@ -1,30 +1,298 @@
-﻿body {
-    padding-top: 90px;
-    padding-bottom: 20px;
-}
+﻿@color_1: red;
+@color_2: #fff;
+@color_3: white;
+@color_4: #333;
+@font_family_1: Lato;
+@background_color_1: #FF4253;
+@background_color_2: #1f2d5c;
+@background_color_3: rgba(31, 45, 92, 0.25);
+@border_color_1: #FF4253;
+@border_color_2: #2196f3;
 
 /* Set padding to keep content from hitting the edges */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/* Set width on the form input elements since they're 100% wide by default */
+/* Bootstrap Overrides */
+/*page-level styles*/
+body {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: @font_family_1;
+}
+
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.dl-horizontal {
+    dt {
+        white-space: normal;
+    }
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
+input {
+    max-width: 280px;
+}
+
+select {
+    max-width: 280px;
+}
+
 textarea {
     max-width: 280px;
 }
 
+.popover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
+span.field-validation-error {
+    color: @color_1;
+    font-weight: bold;
+}
 
+.voffset {
+    margin-top: 2px;
+}
 
+.voffset1 {
+    margin-top: 5px;
+}
 
+.voffset2 {
+    margin-top: 10px;
+}
 
+.voffset3 {
+    margin-top: 20px;
+}
+
+.voffset4 {
+    margin-top: 40px;
+}
+
+.voffset5 {
+    margin-top: 80px;
+}
+
+.navbar-inverse {
+    background-color: @background_color_1;
+    border-color: @border_color_1;
+
+    .navbar-nav {
+        > li {
+            > a {
+                color: @color_2;
+            }
+        }
+
+        > .open {
+            > a {
+                color: @color_2;
+                background-color: @background_color_2;
+                background-color: @background_color_3;
+                color: @color_2;
+                background-color: @background_color_2;
+                background-color: @background_color_3;
+
+                &:hover {
+                    color: @color_2;
+                    background-color: @background_color_2;
+                    background-color: @background_color_3;
+                    color: @color_2;
+                    background-color: @background_color_2;
+                    background-color: @background_color_3;
+                }
+
+                &:focus {
+                    color: @color_2;
+                    background-color: @background_color_2;
+                    background-color: @background_color_3;
+                    color: @color_2;
+                    background-color: @background_color_2;
+                    background-color: @background_color_3;
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        color: @color_2;
+    }
+
+    .notifications {
+        position: relative;
+
+        .badge {
+            position: absolute;
+            top: 8px;
+            right: -1px;
+            background: #333333;
+        }
+    }
+}
+
+.dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: @font_family_1;
+}
+
+h2 {
+    font-family: @font_family_1;
+}
+
+h3 {
+    font-family: @font_family_1;
+}
+
+h4 {
+    font-family: @font_family_1;
+}
+
+h5 {
+    font-family: @font_family_1;
+}
+
+h6 {
+    font-family: @font_family_1;
+}
+
+.h1 {
+    font-family: @font_family_1;
+}
+
+.h2 {
+    font-family: @font_family_1;
+}
+
+.h3 {
+    font-family: @font_family_1;
+}
+
+.h4 {
+    font-family: @font_family_1;
+}
+
+.h5 {
+    font-family: @font_family_1;
+}
+
+.h6 {
+    font-family: @font_family_1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    font-size: 17px;
+    height: 44px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+
+    &:focus {
+        border-color: @border_color_2;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.btn {
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.gigs {
+    list-style: none;
+
+    > li {
+        position: relative;
+        margin-bottom: 30px;
+
+        .detail {
+            position: absolute;
+            top: 0;
+            left: 70px;
+
+            .artist {
+                font-weight: bold;
+                display: block;
+            }
+
+            .genre {
+                font-size: 15px;
+            }
+        }
+
+        .actions {
+            font-size: 15px;
+            display: none;
+        }
+
+        .date {
+            background: red;
+            color: @color_3;
+            text-align: center;
+            width: 60px;
+            border-radius: 8px;
+
+            .month {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 2px 6px;
+            }
+
+            .day {
+                background: #f7f7f7;
+                color: @color_4;
+                font-size: 20px;
+                padding: 6px 12px;
+            }
+        }
+
+        &:hover {
+            .actions {
+                display: block;
+            }
+        }
+    }
+}
+
+.popover-notifications {
+    .popover-content {
+        padding: 0;
+    }
+
+    ul.notifications {
+        list-style: none;
+        padding-left: 0;
+
+        > li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+    }
+}
