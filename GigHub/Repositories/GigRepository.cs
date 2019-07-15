@@ -7,7 +7,7 @@ using GigHub.Models;
 
 namespace GigHub.Repositories
 {
-    public class GigRepository
+    public class GigRepository : IGigRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -33,10 +33,10 @@ namespace GigHub.Repositories
                 .ToList();
         }
 
-        public IEnumerable<Gig> GetUpcomingGigsByArtist(string userId)
+        public IEnumerable<Gig> GetUpcomingGigsByArtist(string artistId)
         {
             return _context.Gigs
-                .Where(g => g.ArtistId == userId &&
+                .Where(g => g.ArtistId == artistId &&
                             g.DateTime > DateTime.Now &&
                             !g.IsCanceled)
                 .Include(g => g.Genre)

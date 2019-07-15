@@ -250,6 +250,10 @@
     <Compile Include="Repositories\FollowingRepository.cs" />
     <Compile Include="Repositories\GenreRepository.cs" />
     <Compile Include="Repositories\GigRepository.cs" />
+    <Compile Include="Repositories\IAttendanceRepository.cs" />
+    <Compile Include="Repositories\IFollowingRepository.cs" />
+    <Compile Include="Repositories\IGenreRepository.cs" />
+    <Compile Include="Repositories\IGigRepository.cs" />
     <Compile Include="ViewModels\ForgotPasswordViewModel.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Genre.cs" />
