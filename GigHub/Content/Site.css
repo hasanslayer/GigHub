@@ -165,7 +165,9 @@ h6 {
   display: block;
 }
 .gigs > li .detail .genre {
-  font-size: 15px;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
 }
 .gigs > li .actions {
   font-size: 15px;
@@ -210,7 +212,9 @@ h6 {
 .popover-notifications ul.notifications .highlight {
   font-weight: bold;
 }
-
 #searchGigs {
-    width: 300px;
+  width: 400px;
+}
+#searchGigs input {
+  max-width: none;
 }
