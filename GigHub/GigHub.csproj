@@ -215,9 +215,13 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Core\Dtos\AttendanceDto.cs" />
     <Compile Include="Core\Dtos\FollowingDto.cs" />
+    <Compile Include="Core\Repositories\INotificationRepository.cs" />
+    <Compile Include="Core\Repositories\IUserRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Core\Repositories\IUserNotificationRepository.cs" />
+    <Compile Include="Persistence\EntityConfiguration\GigConfiguration.cs" />
     <Compile Include="Persistence\Migrations\201905312111254_InitialModel.cs" />
     <Compile Include="Persistence\Migrations\201905312111254_InitialModel.Designer.cs">
       <DependentUpon>201905312111254_InitialModel.cs</DependentUpon>
@@ -265,6 +269,9 @@
     <Compile Include="Core\Models\NotificationType.cs" />
     <Compile Include="Core\Models\UserNotification.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Persistence\Repositories\NotificationRepository.cs" />
+    <Compile Include="Persistence\Repositories\UserNotificationRepository.cs" />
+    <Compile Include="Persistence\Repositories\UserRepository.cs" />
     <Compile Include="Persistence\UnitOfWork.cs" />
     <Compile Include="Persistence\Repositories\AttendanceRepository.cs" />
     <Compile Include="Persistence\Repositories\FollowingRepository.cs" />
